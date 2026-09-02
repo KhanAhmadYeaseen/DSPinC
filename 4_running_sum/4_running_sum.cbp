@@ -31,7 +31,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="input_signal.dat" />
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="waveforms.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

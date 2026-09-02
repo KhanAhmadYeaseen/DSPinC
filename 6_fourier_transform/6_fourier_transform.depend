@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1788312771 source:d:\my_works\dsp c\6_fourier_transform\waveform.c
+
+1788333190 source:d:\my_works\dsp c\6_fourier_transform\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1784304010 source:d:\my_works\dsp c\5_correlation\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
