@@ -11,9 +11,9 @@
 
 double signal[N + 1]  = {0};
 double times[N + 1] = {0} ;
-long long int freqs_Hz[NUM_FREQS + 1] = {100, 20} ;
-long long int phases_deg[NUM_FREQS + 1] = {45, 120} ;
-long long int amps[NUM_FREQS + 1] = {20, 5} ;
+double freqs_Hz[NUM_FREQS + 1] = {99.609375, 19.53125} ;
+double phases_deg[NUM_FREQS + 1] = {45.0, 120.0} ;
+double amps[NUM_FREQS + 1] = {20.0, 5.0} ;
 
 
 void generate_signal() {
@@ -38,6 +38,6 @@ void write_signal_into_file(char *filename, double *signal, int signal_length){
 int main()
 {
     generate_signal()  ;
-    write_signal_into_file ("sig_20_5_fs_1K.dat", signal, N) ;
+    write_signal_into_file ("sig_99_19_fs_1K.dat", signal, N) ;
     return 0;
 }
