@@ -109,12 +109,12 @@ def main():
     folder = r"D:\My_works\DSP C\8_FIR\\"
     plot_fir(
         signal_file=folder + "sig_20_100_180_fs_1K.dat",
-        output_file=folder + "output_bandpass.dat",
-        filter_file=folder + "filter_bandpass.dat",
+        output_file=folder + "output_bandstop.dat",
+        filter_file=folder + "filter_bandstop.dat",
         before_mags_file = folder + "mags_bef.dat",
         before_phases_file = folder + "phs_bef.dat",
-        after_mags_file = folder + "mags_af_bandpass.dat",
-        after_phases_file = folder + "phs_af_bandpass.dat",
+        after_mags_file = folder + "mags_af_bandstop.dat",
+        after_phases_file = folder + "phs_af_bandstop.dat",
         bins_file = folder + "bins.dat"
     )
 
