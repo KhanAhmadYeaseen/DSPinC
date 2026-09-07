@@ -5,15 +5,15 @@
 
 #define FS 1000
 #define N 1024
-#define NUM_FREQS 2
+#define NUM_FREQS 3
 #define PI 3.141592653589793
 
 
 double signal[N + 1]  = {0};
 double times[N + 1] = {0} ;
-double freqs_Hz[NUM_FREQS + 1] = {99.609375, 19.53125} ;
-double phases_deg[NUM_FREQS + 1] = {45.0, 120.0} ;
-double amps[NUM_FREQS + 1] = {20.0, 5.0} ;
+double freqs_Hz[NUM_FREQS + 1] = {99.609375, 19.53125, 179.6875} ;
+double phases_deg[NUM_FREQS + 1] = {45.0, 120.0, 90.0} ;
+double amps[NUM_FREQS + 1] = {20.0, 5.0, 10.0} ;
 
 
 void generate_signal() {
@@ -38,6 +38,6 @@ void write_signal_into_file(char *filename, double *signal, int signal_length){
 int main()
 {
     generate_signal()  ;
-    write_signal_into_file ("sig_99_19_fs_1K.dat", signal, N) ;
+    write_signal_into_file ("sig_20_100_180_fs_1K.dat", signal, N) ;
     return 0;
 }
